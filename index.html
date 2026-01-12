@@ -6,46 +6,128 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Estudio Jurídico Anzalone. Asesoramiento legal en CABA y Provincia de Buenos Aires.">
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
+:root {
+  --azul: #0f172a;
+  --dorado: #c9a14a;
+  --gris: #4b5563;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  color: var(--gris);
+  background: #ffffff;
+  line-height: 1.6;
 }
+
 header {
-  background: #0f172a;
+  background: var(--azul);
   color: white;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
 .btn {
-  background: #c9a14a;
-  color: #0f172a;
-  padding: 14px 28px;
+  display: inline-block;
+  margin-top: 30px;
+  background: var(--dorado);
+  color: var(--azul);
+  padding: 14px 32px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 4px;
 }
+
 section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   max-width: 1100px;
   margin: auto;
 }
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: var(--azul);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .servicios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+  gap: 30px;
 }
+
 .card {
   border: 1px solid #e5e7eb;
-  padding: 25px;
+  padding: 30px;
   border-radius: 6px;
+  background: white;
 }
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 0;
+  color: var(--azul);
+}
+
+.contacto {
+  background: #f9fafb;
+  text-align: center;
+}
+
+.matriculas {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #374151;
+}
+
 footer {
-  background: #0f172a;
+  background: var(--azul);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
+  font-size: 14px;
+}
+
+/* WhatsApp flotante */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/* Redes */
+.redes {
+  margin-top: 25px;
+}
+.redes a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--azul);
+  font-weight: 500;
 }
 </style>
 </head>
@@ -54,16 +136,45 @@ footer {
 
 <header>
   <h1>Estudio Jurídico Anzalone</h1>
-  <p>Asesoramiento legal en CABA y Provincia de Buenos Aires</p>
+  <p>Asesoramiento y representación legal en CABA y Provincia de Buenos Aires</p>
   <a class="btn" href="#contacto">Solicitar consulta</a>
 </header>
 
 <section>
   <h2>Áreas de Práctica</h2>
   <div class="servicios">
-    <div class="card">Derecho Penal</div>
-    <div class="card">Derecho Deportivo</div>
-    <div class="card">Derecho del Consumidor</div>
-    <div class="card">Derecho Laboral</div>
-    <div class="card">Derecho de Familia</div>
-    <div class
+    <div class="card"><h3>Derecho Penal</h3><p>Defensa en todas las etapas del proceso penal.</p></div>
+    <div class="card"><h3>Derecho Deportivo</h3><p>Asesoramiento a deportistas y entidades.</p></div>
+    <div class="card"><h3>Derecho del Consumidor</h3><p>Protección frente a abusos comerciales.</p></div>
+    <div class="card"><h3>Derecho Laboral</h3><p>Asistencia a trabajadores y empleadores.</p></div>
+    <div class="card"><h3>Derecho de Familia</h3><p>Divorcios, alimentos y conflictos familiares.</p></div>
+    <div class="card"><h3>Contratos</h3><p>Redacción y revisión contractual.</p></div>
+  </div>
+</section>
+
+<section id="contacto" class="contacto">
+  <h2>Contacto</h2>
+  <p>CABA y Provincia de Buenos Aires</p>
+  <p>Email: contacto@estudioanzalone.com.ar</p>
+  <p>Tel / WhatsApp: TU NÚMERO</p>
+
+  <div class="matriculas">
+    <strong>Matrículas Profesionales</strong><br>
+    CPACF Tº 155 Fº 290<br>
+    Matrícula Provincia de Buenos Aires – Colegio Avellaneda-Lanús Tº V Fº 501
+  </div>
+
+  <div class="redes">
+    <a href="https://instagram.com/anzalone_estudiojuridico”_ target="_blank">Instagram</a>
+  </div>
+</section>
+
+<footer>
+© 2026 Estudio Jurídico Anzalone
+</footer>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/549XXXXXXXXXX" target="_blank">💬</a>
+
+</body>
+</html>
