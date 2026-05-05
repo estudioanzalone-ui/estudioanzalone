@@ -10,33 +10,50 @@
 body {
   margin:0;
   font-family:'Inter', sans-serif;
+  color:#333;
 }
 
 header {
   background:#0f172a;
   color:white;
   text-align:center;
-  padding:80px 20px;
+  padding:90px 20px;
 }
 
 header h1 {
   font-family:'Playfair Display', serif;
-  font-size:40px;
+  font-size:42px;
 }
 
 .btn {
   background:#c9a14a;
-  padding:12px 25px;
+  padding:14px 28px;
   display:inline-block;
-  margin-top:20px;
+  margin-top:25px;
   color:black;
   text-decoration:none;
 }
 
 section {
-  padding:60px 20px;
-  max-width:900px;
+  padding:70px 20px;
+  max-width:1000px;
   margin:auto;
+}
+
+h2 {
+  font-family:'Playfair Display', serif;
+  text-align:center;
+}
+
+.servicios {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card {
+  border:1px solid #ddd;
+  padding:20px;
 }
 
 footer {
@@ -64,16 +81,26 @@ footer {
 <header>
 <h1>Estudio Jurídico Anzalone</h1>
 <p>CABA y Provincia de Buenos Aires</p>
-<a class="btn" href="#contacto">Contactar</a>
+<a class="btn" href="#contacto">Solicitar consulta</a>
 </header>
 
 <section>
 <h2>Áreas de práctica</h2>
-<p>Derecho penal · laboral · familia · contratos · consumidor · societario</p>
+
+<div class="servicios">
+<div class="card">Derecho Penal</div>
+<div class="card">Derecho Deportivo</div>
+<div class="card">Derecho del Consumidor</div>
+<div class="card">Derecho Laboral</div>
+<div class="card">Derecho de Familia</div>
+<div class="card">Contratos</div>
+</div>
+
 </section>
 
 <section id="contacto">
 <h2>Contacto</h2>
+
 <p>Tel: 11 6481 3182</p>
 <p>Email: contacto@estudioanzalone.com.ar</p>
 
@@ -82,6 +109,7 @@ CPACF Tº 155 Fº 290<br>
 PBA Tº V Fº 501</p>
 
 <p><a href="https://instagram.com/anzalone_estudiojuridico_" target="_blank">Instagram</a></p>
+
 </section>
 
 <footer>
